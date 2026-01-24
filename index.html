@@ -889,4 +889,430 @@
                         </div>
                         <div class="category-card">
                             <div class="category-icon" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);">👩</div>
-                            <h3>Women Empowerment</h
+                            <h3>Women Empowerment</h3>
+                            <p>24 schemes available</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eligibility Tab -->
+                <div id="eligibility-tab" class="tab-content">
+                    <h2 style="color: #1e40af; margin-bottom: 10px;">Eligibility Checker</h2>
+                    <p style="color: #64748b; margin-bottom: 25px;">Answer a few questions to find schemes you qualify for</p>
+
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                        <p style="font-weight: 600; color: #475569;">Step <span id="current-step">1</span> of 3</p>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill" style="width: 33.33%;"></div>
+                    </div>
+
+                    <!-- Step 1 -->
+                    <div id="step-1" class="eligibility-step">
+                        <div class="form-group">
+                            <label>Age *</label>
+                            <input type="number" id="age" placeholder="Enter your age" min="0" max="120">
+                        </div>
+                        <div class="form-group">
+                            <label>Gender *</label>
+                            <select id="gender">
+                                <option value="">Select gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>State *</label>
+                            <select id="state">
+                                <option value="">Select state</option>
+                                <option value="andhra-pradesh">Andhra Pradesh</option>
+                                <option value="karnataka">Karnataka</option>
+                                <option value="maharashtra">Maharashtra</option>
+                                <option value="tamil-nadu">Tamil Nadu</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="gujarat">Gujarat</option>
+                                <option value="rajasthan">Rajasthan</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div id="step-2" class="eligibility-step hidden">
+                        <div class="form-group">
+                            <label>Annual Family Income *</label>
+                            <select id="income">
+                                <option value="">Select income range</option>
+                                <option value="below-1">Below ₹1 lakh</option>
+                                <option value="1-3">₹1-3 lakhs</option>
+                                <option value="3-5">₹3-5 lakhs</option>
+                                <option value="5-8">₹5-8 lakhs</option>
+                                <option value="above-8">Above ₹8 lakhs</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Category *</label>
+                            <select id="category">
+                                <option value="">Select category</option>
+                                <option value="general">General</option>
+                                <option value="obc">OBC</option>
+                                <option value="sc">SC</option>
+                                <option value="st">ST</option>
+                                <option value="ews">EWS</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Occupation *</label>
+                            <select id="occupation">
+                                <option value="">Select occupation</option>
+                                <option value="farmer">Farmer</option>
+                                <option value="student">Student</option>
+                                <option value="employed">Employed (Private)</option>
+                                <option value="government">Government Employee</option>
+                                <option value="self-employed">Self-employed</option>
+                                <option value="unemployed">Unemployed</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 - Results -->
+                    <div id="step-3" class="eligibility-step hidden">
+                        <div class="success-banner">
+                            <div class="success-icon">✓</div>
+                            <div>
+                                <h3 style="font-size: 24px; margin-bottom: 5px;">You're Eligible for 4 Schemes!</h3>
+                                <p style="opacity: 0.9;">Based on your information, here are the schemes you qualify for</p>
+                            </div>
+                        </div>
+
+                        <div class="scheme-card">
+                            <div class="scheme-header">
+                                <div class="scheme-info">
+                                    <div class="scheme-icon">🌾</div>
+                                    <div>
+                                        <h3 style="font-size: 20px; margin-bottom: 5px;">PM-KISAN</h3>
+                                        <p style="color: #64748b; margin-bottom: 10px;">Agriculture</p>
+                                        <p style="color: #10b981; font-weight: 600;">₹6,000/year in 3 installments</p>
+                                    </div>
+                                </div>
+                                <div class="scheme-match">
+                                    <h4>95%</h4>
+                                    <p>Match</p>
+                                </div>
+                            </div>
+                            <button class="apply-btn">View Details & Apply</button>
+                        </div>
+
+                        <div class="scheme-card">
+                            <div class="scheme-header">
+                                <div class="scheme-info">
+                                    <div class="scheme-icon">🏥</div>
+                                    <div>
+                                        <h3 style="font-size: 20px; margin-bottom: 5px;">Ayushman Bharat</h3>
+                                        <p style="color: #64748b; margin-bottom: 10px;">Healthcare</p>
+                                        <p style="color: #10b981; font-weight: 600;">₹5 lakh health coverage</p>
+                                    </div>
+                                </div>
+                                <div class="scheme-match">
+                                    <h4>88%</h4>
+                                    <p>Match</p>
+                                </div>
+                            </div>
+                            <button class="apply-btn">View Details & Apply</button>
+                        </div>
+
+                        <div class="scheme-card">
+                            <div class="scheme-header">
+                                <div class="scheme-info">
+                                    <div class="scheme-icon">📚</div>
+                                    <div>
+                                        <h3 style="font-size: 20px; margin-bottom: 5px;">Post Matric Scholarship</h3>
+                                        <p style="color: #64748b; margin-bottom: 10px;">Education</p>
+                                        <p style="color: #10b981; font-weight: 600;">Up to ₹50,000/year</p>
+                                    </div>
+                                </div>
+                                <div class="scheme-match">
+                                    <h4>75%</h4>
+                                    <p>Match</p>
+                                </div>
+                            </div>
+                            <button class="apply-btn">View Details & Apply</button>
+                        </div>
+
+                        <div class="scheme-card">
+                            <div class="scheme-header">
+                                <div class="scheme-info">
+                                    <div class="scheme-icon">🏠</div>
+                                    <div>
+                                        <h3 style="font-size: 20px; margin-bottom: 5px;">Pradhan Mantri Awas Yojana</h3>
+                                        <p style="color: #64748b; margin-bottom: 10px;">Housing</p>
+                                        <p style="color: #10b981; font-weight: 600;">Up to ₹2.5 lakh subsidy</p>
+                                    </div>
+                                </div>
+                                <div class="scheme-match">
+                                    <h4>70%</h4>
+                                    <p>Match</p>
+                                </div>
+                            </div>
+                            <button class="apply-btn">View Details & Apply</button>
+                        </div>
+                    </div>
+
+                    <div class="button-group" id="nav-buttons">
+                        <button class="btn-secondary hidden" id="prev-btn" onclick="previousStep()">← Previous</button>
+                        <button class="btn-primary" id="next-btn" onclick="nextStep()">Next →</button>
+                    </div>
+                </div>
+
+                <!-- Documents Tab -->
+                <div id="documents-tab" class="tab-content">
+                    <h2 style="color: #1e40af; margin-bottom: 10px;">Document Guidance</h2>
+                    <p style="color: #64748b; margin-bottom: 30px;">Essential documents needed for scheme applications</p>
+                    
+                    <div style="background: #eff6ff; border: 3px solid #3b82f6; border-radius: 12px; padding: 30px; margin-bottom: 30px;">
+                        <h3 style="font-size: 18px; margin-bottom: 20px; color: #1e40af;">Common Documents Required</h3>
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <div style="background: white; padding: 20px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <span style="font-size: 28px;">📄</span>
+                                    <div>
+                                        <h4 style="font-size: 16px; margin-bottom: 3px;">Aadhaar Card</h4>
+                                        <p style="font-size: 13px; color: #64748b;">12-digit unique identification</p>
+                                    </div>
+                                </div>
+                                <button style="background: none; border: none; color: #3b82f6; font-weight: 600; cursor: pointer; font-size: 14px;">View Sample →</button>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <span style="font-size: 28px;">💰</span>
+                                    <div>
+                                        <h4 style="font-size: 16px; margin-bottom: 3px;">Income Certificate</h4>
+                                        <p style="font-size: 13px; color: #64748b;">Valid for 6 months from issue date</p>
+                                    </div>
+                                </div>
+                                <button style="background: none; border: none; color: #3b82f6; font-weight: 600; cursor: pointer; font-size: 14px;">View Sample →</button>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <span style="font-size: 28px;">📋</span>
+                                    <div>
+                                        <h4 style="font-size: 16px; margin-bottom: 3px;">Caste Certificate</h4>
+                                        <p style="font-size: 13px; color: #64748b;">For SC/ST/OBC categories</p>
+                                    </div>
+                                </div>
+                                <button style="background: none; border: none; color: #3b82f6; font-weight: 600; cursor: pointer; font-size: 14px;">View Sample →</button>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <span style="font-size: 28px;">🏦</span>
+                                    <div>
+                                        <h4 style="font-size: 16px; margin-bottom: 3px;">Bank Account Details</h4>
+                                        <p style="font-size: 13px; color: #64748b;">Passbook or statement (first page)</p>
+                                    </div>
+                                </div>
+                                <button style="background: none; border: none; color: #3b82f6; font-weight: 600; cursor: pointer; font-size: 14px;">View Sample →</button>
+                            </div>
+                            <div style="background: white; padding: 20px; border-radius: 10px; display: flex; justify-content: space-between; align-items: center;">
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                    <span style="font-size: 28px;">📸</span>
+                                    <div>
+                                        <h4 style="font-size: 16px; margin-bottom: 3px;">Passport Size Photo</h4>
+                                        <p style="font-size: 13px; color: #64748b;">Recent color photograph</p>
+                                    </div>
+                                </div>
+                                <button style="background: none; border: none; color: #3b82f6; font-weight: 600; cursor: pointer; font-size: 14px;">View Sample →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: white; border: 3px solid #e2e8f0; border-radius: 12px; padding: 30px;">
+                        <h3 style="font-size: 18px; margin-bottom: 20px; color: #1e40af;">Application Checklist</h3>
+                        <div style="display: flex; flex-direction: column; gap: 15px;">
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer; padding: 10px; border-radius: 8px; transition: background 0.3s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">
+                                <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer;">
+                                <span style="color: #334155;">Verify all documents are self-attested</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer; padding: 10px; border-radius: 8px; transition: background 0.3s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">
+                                <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer;">
+                                <span style="color: #334155;">Ensure photocopies are clear and readable</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer; padding: 10px; border-radius: 8px; transition: background 0.3s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">
+                                <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer;">
+                                <span style="color: #334155;">Check income certificate validity (usually 6 months)</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer; padding: 10px; border-radius: 8px; transition: background 0.3s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">
+                                <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer;">
+                                <span style="color: #334155;">Keep digital copies for online applications</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer; padding: 10px; border-radius: 8px; transition: background 0.3s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">
+                                <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer;">
+                                <span style="color: #334155;">Get documents notarized if required by the scheme</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 15px; cursor: pointer; padding: 10px; border-radius: 8px; transition: background 0.3s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">
+                                <input type="checkbox" style="width: 20px; height: 20px; cursor: pointer;">
+                                <span style="color: #334155;">Verify Aadhaar-bank account linking is complete</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border-left: 4px solid #f59e0b; padding: 25px; border-radius: 10px; margin-top: 30px;">
+                        <h4 style="color: #92400e; margin-bottom: 15px; display: flex; align-items: center; gap: 10px;">
+                            <span>💡</span> Pro Tips
+                        </h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="color: #78350f; margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #f59e0b; font-weight: bold;">•</span>
+                                Keep both original and photocopies of all documents
+                            </li>
+                            <li style="color: #78350f; margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #f59e0b; font-weight: bold;">•</span>
+                                Scan documents at 300 DPI for best quality
+                            </li>
+                            <li style="color: #78350f; margin-bottom: 10px; padding-left: 20px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #f59e0b; font-weight: bold;">•</span>
+                                Save scanned documents as PDF files
+                            </li>
+                            <li style="color: #78350f; padding-left: 20px; position: relative;">
+                                <span style="position: absolute; left: 0; color: #f59e0b; font-weight: bold;">•</span>
+                                Always keep document file sizes under 2MB for online uploads
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="portal-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Portal</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Vision & Mission</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Browse Schemes</a></li>
+                    <li><a href="#">Check Eligibility</a></li>
+                    <li><a href="#">Track Application</a></li>
+                    <li><a href="#">Download Forms</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">User Manual</a></li>
+                    <li><a href="#">Video Tutorials</a></li>
+                    <li><a href="#">Help Desk</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Policies</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Disclaimer</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Government of India. All Rights Reserved | Last Updated: January 24, 2026</p>
+            <p style="margin-top: 5px; font-size: 12px;">This is a citizen-centric portal. Beware of fraudulent agents.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentStep = 1;
+
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+
+            // Update navigation active state
+            document.querySelectorAll('.nav-menu a, .sidebar-menu a').forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Update breadcrumb
+            const breadcrumbMap = {
+                'home': 'Dashboard',
+                'eligibility': 'Check Eligibility',
+                'documents': 'Document Guidance'
+            };
+            document.getElementById('breadcrumb-current').textContent = breadcrumbMap[tabName] || 'Dashboard';
+
+            // Reset eligibility checker if switching tabs
+            if (tabName !== 'eligibility') {
+                currentStep = 1;
+                updateEligibilityStep();
+            }
+        }
+
+        function nextStep() {
+            if (currentStep < 3) {
+                currentStep++;
+                updateEligibilityStep();
+            }
+        }
+
+        function previousStep() {
+            if (currentStep > 1) {
+                currentStep--;
+                updateEligibilityStep();
+            }
+        }
+
+        function updateEligibilityStep() {
+            // Hide all steps
+            document.querySelectorAll('.eligibility-step').forEach(step => {
+                step.classList.add('hidden');
+            });
+
+            // Show current step
+            document.getElementById('step-' + currentStep).classList.remove('hidden');
+
+            // Update progress bar
+            const progress = (currentStep / 3) * 100;
+            document.getElementById('progress-fill').style.width = progress + '%';
+
+            // Update step counter
+            document.getElementById('current-step').textContent = currentStep;
+
+            // Update buttons
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+
+            if (currentStep === 1) {
+                prevBtn.classList.add('hidden');
+            } else {
+                prevBtn.classList.remove('hidden');
+            }
+
+            if (currentStep === 3) {
+                nextBtn.classList.add('hidden');
+            } else {
+                nextBtn.classList.remove('hidden');
+            }
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateEligibilityStep();
+        });
+    </script>
+</body>
+</html>
